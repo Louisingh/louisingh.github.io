@@ -15,10 +15,11 @@
 
   "mark": {
     "type": "line",
-    "color": "green"},
+    "point": true},
 
   "encoding": {
-    "x": {"field": "Year", "type": "temporal", "title":null},
-    "y": {"field": "atiwgo_999_i_GB", "type": "quantitative", "title":null}
+    "x": {"field": "Year", "type": "temporal"},
+    "y": {"field": "atiwgo_999_i_GB", "type": "quantitative", "title":"ATIWGO"},
+    "tooltip": {"field": "atiwgo_999_i_GB", "type": "quantitative"}
   }
 }
