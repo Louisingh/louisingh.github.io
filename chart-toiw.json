@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Direct Taxes on Income and Wealth",
+    "subtitle": ["All Ages, Individual, Constant Local, PPP, Constant (2022)", "Source: World Inequality Database"],
+    "color": "black",
+    "subtitleColor": "black"
+  },
+
+  "width": 500,
+  "height": 300,
+
+  "data": {"url": "https://raw.githubusercontent.com/louisingh/louisingh.github.io/main/wid-dtoiw-uk.csv"},
+
+  "mark": {
+    "type": "line",
+    "color": "green"},
+
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":null},
+    "y": {"field": "atiwgo_999_i_GB", "type": "quantitative", "title":null}
+  }
+}
