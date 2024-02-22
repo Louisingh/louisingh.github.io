@@ -1,0 +1,24 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+  "title": {
+    "text":"Net National Wealth to Net National Income Ratio",
+    "subtitle": ["Total Population, Ratio, All Ages, Individual", "Source: World Inequality Database"],
+    "color": "black",
+    "subtitleColor": "black"
+  },
+
+  "width": 500,
+  "height": 300,
+
+  "data": {"url": "https://raw.githubusercontent.com/louisingh/louisingh.github.io/main/wid-nnw-to-nni-ratio-uk.csv"},
+
+  "mark": {
+    "type": "line",
+    "color": "red"},
+
+  "encoding": {
+    "x": {"field": "Year", "type": "temporal", "title":null},
+    "y": {"field": "wwealn_999_i_GB", "type": "quantitative", "title":null}
+  }
+}
